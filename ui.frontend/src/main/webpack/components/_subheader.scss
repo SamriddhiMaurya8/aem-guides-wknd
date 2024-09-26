@@ -1,0 +1,41 @@
+
+  .sub-header {
+    background-color: #fff;
+    height: 50px;
+    padding: 0 160px 0 160px;
+    &__content {
+      .indus-logo {
+        height: 100%;
+  
+        @media screen and (max-width:500px) {
+          width: 115px;
+          height: 20px;
+          margin-top: 17px;
+        }
+      }
+      display: flex;
+  
+      justify-content: space-between;
+      &--right {
+        display: flex;
+        gap: 23px;
+  
+        i {
+          margin-top: 12px;
+          
+          
+         
+  
+        }
+      }
+    }
+  
+  @media screen and (max-width:500px) {
+      width:  (390px);
+  height:  (50px);
+  padding: 0px 16px 0px 16px;
+  justify: space-between;
+  
+  
+  }
+  }

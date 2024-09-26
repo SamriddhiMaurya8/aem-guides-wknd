@@ -1,0 +1,97 @@
+<p> ${properties.preheading}</p>
+<p> ${properties.heading}</p>
+<sly data-sly-list="${resource.listChildren}">
+  <sly data-sly-test="${item.name == 'stories'}">
+    <sly data-sly-list.story="${item.listChildren}">
+      <p>${story.personname}</p>
+      <p></p>
+      <p>${story.achievement}</p>
+      <p></p>
+      <p>${story.about}</p>
+    </sly>
+  </sly>
+</sly>
+
+<!--/* html  */-->
+
+<div class="carouselContainer">
+  <h1 class="carouselContainer__subheading"> ${properties.preheading}</h1>
+  <h2 class="carouselContainer__mainheading">${properties.heading}</h2>
+  <div class="carouselContainer__carousel">
+  <sly data-sly-list="${resource.listChildren}">
+  <sly data-sly-test="${item.name == 'stories'}">
+    <sly data-sly-list.story="${item.listChildren}">
+    <div class="carouselContainer__carousel--profile">
+      <img
+        src=${properties.fileReference}
+        alt=${properties.alt}
+        class="profile-image"
+      />
+      <div class="carouselContainer__carousel--profile-name">${properties.personname}</div>
+      <div class="carouselContainer__carousel--profile-title">
+        ${properties.achievement}
+      </div>
+    </div>
+    </sly>
+    </sly>
+  </sly>
+    <!--/* <div class="carouselContainer__carousel--profile active">
+      <img
+        src="https://picsum.photos/536/354"
+        alt="Jennifer Christopher"
+        class="profile-image"
+      />
+      <div class="carouselContainer__carousel--profile-name">
+        Jennifer Christopher
+      </div>
+      <div class="title">Recharging Water and Lives</div>
+    </div>
+    <div class="carouselContainer__carousel--main-profile">
+      <img
+        src="https://picsum.photos/200/300?grayscale"
+        alt="Venkata Narasimharajuvaripeta"
+        class="profile-image"
+      />
+      <div class="carouselContainer__carousel--profile-name main-name">
+        Venkata Narasimharajuvaripeta
+      </div>
+      <div class="title">Paralympics Gold Medalist</div>
+    </div>
+    <div class="carouselContainer__carousel--profile active">
+      <img
+        src="https://picsum.photos/200/300?grayscale"
+        alt="Jennifer Christopher"
+        class="profile-image"
+      />
+      <div class="carouselContainer__carousel--profile-name">Christopher</div>
+      <div class="title">Recharging Water and Lives</div>
+    </div>
+    <div class="carouselContainer__carousel--profile">
+      <img
+        src="https://picsum.photos/seed/picsum/200/300"
+        alt="Jennifer Christopher"
+        class="profile-image"
+      />
+      <div class="carouselContainer__carousel--profile-name">
+        njdjfcbw jncjd
+      </div>
+      <div class="title">Recharging Water and Lives</div>
+    </div> */-->
+  </div>
+  <p class="carouselContainer__description">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Lorem ipsum
+    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+    nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+  </p>
+  <div class="carouselContainer__navigation-button">
+    <button class="carouselContainer__navigation-button--nav-buttonn">
+      &#8249;
+    </button>
+    <button class="carouselContainer__navigation-button--nav-buttonn">
+      &#8250;
+    </button>
+  </div>
+</div>
