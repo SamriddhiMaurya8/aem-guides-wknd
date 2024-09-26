@@ -1,4 +1,4 @@
-<p> ${properties.preheading}</p>
+<!--/* <p> ${properties.preheading}</p>
 <p> ${properties.heading}</p>
 <sly data-sly-list="${resource.listChildren}">
   <sly data-sly-test="${item.name == 'stories'}">
@@ -10,7 +10,7 @@
       <p>${story.about}</p>
     </sly>
   </sly>
-</sly>
+</sly> */-->
 
 <!--/* html  */-->
 
@@ -19,21 +19,21 @@
   <h2 class="carouselContainer__mainheading">${properties.heading}</h2>
   <div class="carouselContainer__carousel">
   <sly data-sly-list="${resource.listChildren}">
-  <sly data-sly-test="${item.name == 'stories'}">
-    <sly data-sly-list.story="${item.listChildren}">
-    <div class="carouselContainer__carousel--profile">
-      <img
-        src=${properties.fileReference}
-        alt=${properties.alt}
-        class="profile-image"
-      />
-      <div class="carouselContainer__carousel--profile-name">${properties.personname}</div>
-      <div class="carouselContainer__carousel--profile-title">
-        ${properties.achievement}
+   <sly data-sly-test="${item.name == 'stories'}">
+      <sly data-sly-list.story="${item.listChildren}">
+      <div class="carouselContainer__carousel--profile">
+         <img
+         src=${properties.fileReference}
+         alt=${properties.alt}
+         class="profile-image"
+         />
+         <div class="carouselContainer__carousel--profile-name">${properties.personname}</div>
+         <div class="carouselContainer__carousel--profile-title">
+         ${properties.achievement}
+         </div>
       </div>
-    </div>
-    </sly>
-    </sly>
+      </sly>
+   </sly>
   </sly>
     <!--/* <div class="carouselContainer__carousel--profile active">
       <img
