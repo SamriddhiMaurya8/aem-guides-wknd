@@ -15,7 +15,7 @@
 <!--/* html  */-->
 
 <div class="carouselContainer">
-  <h1 class="carouselContainer__subheading"> ${properties.preheading}</h1>
+  <h1 class="carouselContainer__subheading"> <em>${properties.preheading}</em></h1>
   <h2 class="carouselContainer__mainheading">${properties.heading}</h2>
   <div class="carouselContainer__carousel">
   <sly data-sly-list="${resource.listChildren}">
@@ -23,60 +23,19 @@
       <sly data-sly-list.story="${item.listChildren}">
       <div class="carouselContainer__carousel--profile">
          <img
-         src=${properties.fileReference}
-         alt=${properties.alt}
+         src=${story.fileReference}
+         alt=${story.alt}
          class="profile-image"
          />
-         <div class="carouselContainer__carousel--profile-name">${properties.personname}</div>
+         <div class="carouselContainer__carousel--profile-name">${story.personname}</div>
          <div class="carouselContainer__carousel--profile-title">
-         ${properties.achievement}
+         ${story.achievement}
          </div>
       </div>
       </sly>
    </sly>
   </sly>
-    <!--/* <div class="carouselContainer__carousel--profile active">
-      <img
-        src="https://picsum.photos/536/354"
-        alt="Jennifer Christopher"
-        class="profile-image"
-      />
-      <div class="carouselContainer__carousel--profile-name">
-        Jennifer Christopher
-      </div>
-      <div class="title">Recharging Water and Lives</div>
-    </div>
-    <div class="carouselContainer__carousel--main-profile">
-      <img
-        src="https://picsum.photos/200/300?grayscale"
-        alt="Venkata Narasimharajuvaripeta"
-        class="profile-image"
-      />
-      <div class="carouselContainer__carousel--profile-name main-name">
-        Venkata Narasimharajuvaripeta
-      </div>
-      <div class="title">Paralympics Gold Medalist</div>
-    </div>
-    <div class="carouselContainer__carousel--profile active">
-      <img
-        src="https://picsum.photos/200/300?grayscale"
-        alt="Jennifer Christopher"
-        class="profile-image"
-      />
-      <div class="carouselContainer__carousel--profile-name">Christopher</div>
-      <div class="title">Recharging Water and Lives</div>
-    </div>
-    <div class="carouselContainer__carousel--profile">
-      <img
-        src="https://picsum.photos/seed/picsum/200/300"
-        alt="Jennifer Christopher"
-        class="profile-image"
-      />
-      <div class="carouselContainer__carousel--profile-name">
-        njdjfcbw jncjd
-      </div>
-      <div class="title">Recharging Water and Lives</div>
-    </div> */-->
+
   </div>
   <p class="carouselContainer__description">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

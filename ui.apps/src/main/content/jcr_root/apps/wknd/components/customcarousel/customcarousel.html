@@ -1,0 +1,87 @@
+custom carousel
+
+<sly data-sly-list="${resource.listChildren}">
+<sly data-sly-test="${item.name == 'assets'}">   
+<div class="mainCarousel">
+<sly data-sly-list.imageSection="${item.listChildren}">
+<div class="mainCarousel__slide active">
+    <img src=${imageSection.fileReference} alt=${imageSection.alt} class="mainCarousel__slide--image">
+    <div class="mainCarousel__slide--content">
+        <h1 class="mainCarousel__slide--content-topHeading"><em>${imageSection.imageSubtitle}</em></h1>
+        <h2 class="mainCarousel__slide--content-mainHeading">${imageSection.imageTitle}</h2>
+        <p class="mainCarousel__slide--content-paragraph">${imageSection.imageDescription}</p>
+        <a href=${imageSection.buttonlinkURL} class="button">${imageSection.buttonText}</a>
+    </div>
+</div>
+</sly>
+
+<div class="mainCarousel__navigation">
+    <button class="mainCarousel__navigation--navi-button" onclick="changeSlide(-1)">←</button>
+    <div class="mainCarousel__navigation--dots">
+        <span class="mainCarousel__navigation--dots-dot active" onclick="goToSlide(0)">1</span>
+        <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(1)">2</span>
+        <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(2)">3</span>
+        <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(3)">4</span>
+        <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(4)">5</span>
+        <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(5)">6</span>
+        <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(6)">7</span>
+    </div>
+    <button class="mainCarousel__navigation--navi-button" onclick="changeSlide(1)">→</button>
+</div>
+</div>
+</sly>
+</sly>
+<!--/* <div class="mainCarousel__slide" >
+    <img src="https://picsum.photos/id/500/300" alt="Slide Image 2" class="mainCarousel__slide--image">
+    <div class="mainCarousel__slide--content">
+        <h1 class="mainCarousel__slide--content-topHeading"><em>Empowering Communities</em></h1>
+        <h2 class="mainCarousel__slide--content-mainHeading">EDUCATION FIRST</h2>
+        <p class="mainCarousel__slide--content-paragraph">Supporting educational initiatives to create opportunities for underprivileged children.</p>
+        <a href="#" class="button">Learn More →</a>
+    </div>
+</div>
+<div class="mainCarousel__slide" >
+    <img src="https://picsum.photos/336/345" alt="Slide Image 3" class="mainCarousel__slide--image">
+    <div class="mainCarousel__slide--content">
+        <h1 class="mainCarousel__slide--content-topHeading"><em>Environmental Stewardship</em></h1>
+        <h2 class="mainCarousel__slide--content-mainHeading">GREEN FUTURE</h2>
+        <p class="mainCarousel__slide--content-paragraph">Implementing sustainable practices to protect our environment for future generations.</p>
+        <a href="#" class="button">Explore →</a>
+    </div>
+</div>
+<div class="mainCarousel__slide" >
+    <img src="https://picsum.photos/436/354" alt="Slide Image 4" class="mainCarousel__slide--image">
+    <div class="mainCarousel__slide--content">
+        <h1 class="mainCarousel__slide--content-topHeading"><em>Healthcare Initiatives</em></h1>
+        <h2 class="mainCarousel__slide--content-mainHeading">WELLNESS FOR ALL</h2>
+        <p class="mainCarousel__slide--content-paragraph">Providing access to quality healthcare services in underserved areas.</p>
+        <a href="#" class="button">Discover →</a>
+    </div>
+</div>
+<div class="mainCarousel__slide" >
+    <img src="https://picsum.photos/536/359" alt="Slide Image 2" class="mainCarousel__slide--image">
+    <div class="mainCarousel__slide--content">
+        <h1 class="mainCarousel__slide--content-topHeading"><em>Rural Development</em></h1>
+        <h2 class="mainCarousel__slide--content-mainHeading">BRIDGING THE GAP</h2>
+        <p class="mainCarousel__slide--content-paragraph">Fostering economic growth and infrastructure development in rural communities.</p>
+        <a href="#" class="button">See Impact →</a>
+    </div>
+</div>
+<div class="mainCarousel__slide" >
+    <img src="https://picsum.photos/536/254" alt="Slide Image 2" class="mainCarousel__slide--image">
+    <div class="mainCarousel__slide--content">
+        <h1 class="mainCarousel__slide--content-topHeading"><em>Women Empowerment</em></h1>
+        <h2 class="mainCarousel__slide--content-mainHeading">EQUAL OPPORTUNITIES</h2>
+        <p class="mainCarousel__slide--content-paragraph">Supporting initiatives that promote gender equality and women's empowerment.</p>
+        <a href="#" class="button">Join Us →</a>
+    </div>
+</div>
+<div class="mainCarousel__slide" >
+    <img src="https://picsum.photos/436/354" alt="Slide Image 2" class="mainCarousel__slide--image">            <div class="mainCarousel__slide--content">
+        <h1 class="mainCarousel__slide--content-topHeading"><em>Digital Inclusion</em></h1>
+        <h2 class="mainCarousel__slide--content-mainHeading">CONNECTING LIVES</h2>
+        <p class="mainCarousel__slide--content-paragraph">Bridging the digital divide to ensure access to technology for all.</p>
+        <a href="#" class="button">Get Involved →</a>
+    </div>
+</div> */-->
+</div>

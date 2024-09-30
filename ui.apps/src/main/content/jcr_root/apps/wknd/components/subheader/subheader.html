@@ -3,9 +3,12 @@
 
 <div class="sub-header">
 <div class="sub-header__content">
-    <img src=${properties.fileReference} alt="logo">
+    <img src=${properties.fileReference} alt="logo"  class="sub-header__content--logo">
     <div class="sub-header__content--right">
-       <p><img src="" alt="">${properties.email}</p>
+       <div class='email-div'>
+           <img src="" alt="email-logo" class="email-div__logo" >
+           <p class="email-div__desc">${properties.email}</p>
+       </div>
        <p>search</p>
     </div>
 </div>

@@ -1,0 +1,58 @@
+
+<div class="contactSection">
+    <div class="contactSection__leftsection">
+        <h2 class="contactSection__leftsection--subheading"> ${properties.preheading}</h2>
+        <h1 class="contactSection__leftsection--heading"> ${properties.heading}</h1>
+        <p class="contactSection__leftsection--paragraph">${properties.content}</p>
+        <div class="contactSection__leftsection--contactInfo">
+            <sly data-sly-resource="${'connectwithus1' @ resourceType='wknd/components/connectwithus'}"></sly>
+             <sly data-sly-resource="${'connectwithus2' @ resourceType='wknd/components/connectwithus'}"></sly>
+              <sly data-sly-resource="${'connectwithus3' @ resourceType='wknd/components/connectwithus'}"></sly>
+        </div>
+        <div class="contactSection__leftsection--socialIcons">
+            <sly data-sly-resource="${'icon1' @ resourceType='wknd/components/icon', selectors='fbicon'}"></sly>
+            <sly data-sly-resource="${'icon2' @ resourceType='wknd/components/icon', selectors='instagramicon'}"></sly>
+            <sly data-sly-resource="${'icon3' @ resourceType='wknd/components/icon', selectors='youtubeicon'}"></sly>
+            <sly data-sly-resource="${'icon4' @ resourceType='wknd/components/icon', selectors='linkedinicon'}"></sly>
+        </div>
+    </div>
+    <div class="contactSection__rightSection">
+        <div class="contactSection__rightSection--top">
+            <div class="contactSection__rightSection--top-name">
+                <label class="label" for="name">Name</label>
+                <input type="text" placeholder="eg., Venkata Narasimharajuvaripeta" name="name">
+            </div>
+            <div class="contactSection__rightSection--top-mobile">
+                <label class="label" for="number">Mobile Number</label>
+                <input type="number" placeholder="eg., 9786575437" name="mobile">
+            </div>
+        </div>
+        <div class="contactSection__rightSection--middle">
+            <div class="contactSection__rightSection--middle-email">
+                <label class="label"  for="email"> Email Address</label>
+                <input type="email" placeholder="eg., abc@gmail.com" name="email">
+            </div>
+            <div class="contactSection__rightSection--middle-company">
+                <label class="label" for="company">Company</label>
+                <select id="company" name="company" class="contactSection__rightSection--middle-company__select">
+                    <option>Select Option</option>
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                    <option>Four</option>
+                </select>
+            </div>
+        </div>
+        <div class="contactSection__rightSection--bottom">
+            <div class="contactSection__rightSection--bottom-text">
+                <label class="label" for="message">Message</label>
+                <textarea placeholder="Type your message here..." name="message" class="textarea"></textarea>
+            </div>
+            <div class="contactSection__rightSection--bottom-checkboxContainer">
+                <input type="checkbox" name="agree">
+                <span class="checkboxContainer__span">I agree that even if my contact number is registered with NDNC / NCPR, I would still want the Company to contact...<a href="#" style="color: #ff7f00;">Read More</a></span>
+            </div>
+        </div>
+        <button class="contactSection__rightSection--button">Know More <i class="fas fa-arrow-right"></i></button>
+    </div>
+</div>  
