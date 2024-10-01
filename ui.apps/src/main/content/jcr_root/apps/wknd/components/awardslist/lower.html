@@ -1,0 +1,19 @@
+
+<div class="cardsContainer__cards--wrapper">
+<sly data-sly-list="${resource.listChildren}">
+<sly data-sly-test="${item.name == 'assets'}">
+   <sly data-sly-list.award="${item.listChildren}">
+     <div class="cardsContainer__cards--wrapper-itemRight item1">
+          <div class="cardsContainer__cards--wrapper-itemRight-content">
+            <h4 class="cardsContainer__cards--wrapper-itemRight-content__boldText">${award.title}</h4>
+            <p class="cardsContainer__cards--wrapper-itemRight-content__basicText">${award.description}</p>
+          </div>
+      </div>
+     <div class="cardsContainer__cards--wrapper-itemRight item2">
+          <img src=${award.fileReference} class="cardsContainer__cards--wrapper-itemLeft__images" alt=${award.alt}>
+     </div>
+     </sly>
+     </sly>
+     </sly>
+ </div>
+ </sly>

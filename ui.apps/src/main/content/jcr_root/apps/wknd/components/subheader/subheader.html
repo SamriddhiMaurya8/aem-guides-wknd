@@ -3,13 +3,15 @@
 
 <div class="sub-header">
 <div class="sub-header__content">
-    <img src=${properties.fileReference} alt="logo"  class="sub-header__content--logo">
+    <div class="sub-header__content--left">
+        <img src=${properties.fileReference} alt="logo"  class="sub-header__content--left-logo">
+    </div>
     <div class="sub-header__content--right">
        <div class='email-div'>
-           <img src="" alt="email-logo" class="email-div__logo" >
+           <div data-sly-resource="${'icon1' @ resourceType='wknd/components/icon', selectors='emailicon'}"  class="email-div--logo"></div>
            <p class="email-div__desc">${properties.email}</p>
        </div>
-       <p>search</p>
+       <div data-sly-resource="${'icon2' @ resourceType='wknd/components/icon', selectors='searchicon'}" class="search-icon"></div>
     </div>
 </div>
 </div>

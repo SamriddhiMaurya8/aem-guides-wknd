@@ -1,0 +1,17 @@
+footer top
+<sly data-sly-list.item="${resource.listChildren}">
+    <sly data-sly-test="${item.name == 'menu'}">
+        <sly data-sly-list.menu="${item.listChildren}">
+            <p>${menu.menutitle}</p>
+
+         
+            <sly data-sly-list.subitem="${menu.listChildren}">
+                <sly data-sly-test="${subitem.name == 'items'}">
+                    <sly data-sly-list.item="${subitem.listChildren}">
+                        <p>${item.menuitem}</p>
+                    </sly>
+                </sly>
+            </sly>
+        </sly>
+    </sly>
+</sly>

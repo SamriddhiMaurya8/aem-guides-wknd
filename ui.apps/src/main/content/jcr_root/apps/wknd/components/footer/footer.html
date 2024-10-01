@@ -1,0 +1,28 @@
+footer
+ <div>
+ <div data-sly-resource="${'icon1' @ resourceType='wknd/components/icon', selectors='fbicon'}"></div>
+ <div data-sly-resource="${'icon2' @ resourceType='wknd/components/icon', selectors='instagramicon'}"></div>
+ <div data-sly-resource="${'icon3' @ resourceType='wknd/components/icon', selectors='youtubeicon'}"></div>
+ <div data-sly-resource="${'icon4' @ resourceType='wknd/components/icon', selectors='linkedinicon'}"></div>
+ <div data-sly-resource="${'icon4' @ resourceType='wknd/components/icon', selectors='locationicon'}"></div>
+ <div data-sly-resource="${'customimage1' @ resourceType='wknd/components/customimage' , selectors='logo'}"></div>
+ </div>
+ 
+<div>
+<sly>address : ${properties.branchaddress}</sly>
+<sly data-sly-resource="${'connectwithus1' @ resourceType='wknd/components/connectwithus'}"></sly>
+</div>
+
+<div>
+<div data-sly-resource="${'footerlist1' @ resourceType='wknd/components/footerlist', selectors='footertop'}"></div>
+<div data-sly-resource="${'footerlist2' @ resourceType='wknd/components/footerlist', selectors='footeraccordian'}"></div>
+</div>
+
+ <div data-sly-resource="${'customimage2' @ resourceType='wknd/components/customimage' , selectors='qr'}"></div>
+  <div data-sly-resource="${'customimage3' @ resourceType='wknd/components/customimage' , selectors='registerimage'}"></div>
+
+<sly>address : ${properties.registeredaddress}</sly>
+
+
+
+

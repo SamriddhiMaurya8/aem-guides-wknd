@@ -1,6 +1,7 @@
 
 
 @import "variables";
+@import 'mixin' ; 
 
 .sub-header-two {
   // display: flex;
@@ -34,17 +35,22 @@
     padding: 1 2rem;
 
     &__content {
-      .logo-img {
-        margin-top: 10px;
-        width: 80px;
-        height: 35px;
+
+       .menu-icon{
+        // margin-top: 1rem;
+        @include flex-centre ; 
       }
+      // .logo-img {
+      //   margin-top: 10px;
+      //   width: 80px;
+      //   height: 35px;
+      // }
       
-      i {
-        width: 50px;
-        height: 35px;
-        margin-top: 20px;
-      }
+      // i {
+      //   width: 50px;
+      //   height: 35px;
+      //   margin-top: 20px;
+      // }
       
         @media screen and (max-width: 768px) {
           padding: 1rem 3.5rem;
