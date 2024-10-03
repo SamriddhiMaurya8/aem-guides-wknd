@@ -58,13 +58,17 @@
   }
 
   &__container {
-    flex: 1;
+    // flex: 1;
     position: relative;
 
     .csr-image {
       max-width: 100%;
       clip-path: circle(50% at right);
       height: 100%;
+    }
+
+    @media screen and (max-width:1315px) {
+      flex: 1;
     }
   }
 
@@ -75,7 +79,7 @@
     }
 
     &__container {
-      margin-top: 20px;
+      // margin-top: 20px;
       .csr-image {
         clip-path: circle(50% at top); 
         width: 100%;

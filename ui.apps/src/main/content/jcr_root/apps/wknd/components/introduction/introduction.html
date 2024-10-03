@@ -2,20 +2,18 @@
 
 <div class="splitSection">
   <div class="splitSection__image">
-    <img src=${properties.fileReference} alt="splitSection" />
+    <img src=${properties.fileReference} alt=${properties.alt} />
   </div>
   <div class="splitSection__content">
     <div class="splitSection__content--headings">
-      <h1 class="splitSection__content--headings--one">Our journey of</h1>
+      <h1 class="splitSection__content--headings--one">${properties.subtitle}</h1>
       <h2 class="splitSection__content--headings--two">
-        COMPASSION AND CHANGE
+      ${properties.title}
       </h2>
     </div>
     <p class="splitSection__content--para">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+    ${properties.description}
     </p>
-    <a href="#" class="splitSection__content--btn">Know More →</a>
+    <a href=${properties.buttonlinkURL} class="splitSection__content--btn">${properties.buttontext} →</a>
   </div>
 </div>

@@ -1,28 +1,110 @@
-footer
- <div>
- <div data-sly-resource="${'icon1' @ resourceType='wknd/components/icon', selectors='fbicon'}"></div>
- <div data-sly-resource="${'icon2' @ resourceType='wknd/components/icon', selectors='instagramicon'}"></div>
- <div data-sly-resource="${'icon3' @ resourceType='wknd/components/icon', selectors='youtubeicon'}"></div>
- <div data-sly-resource="${'icon4' @ resourceType='wknd/components/icon', selectors='linkedinicon'}"></div>
- <div data-sly-resource="${'icon4' @ resourceType='wknd/components/icon', selectors='locationicon'}"></div>
- <div data-sly-resource="${'customimage1' @ resourceType='wknd/components/customimage' , selectors='logo'}"></div>
- </div>
+
+
+<footer class="footer">
+  <header class="footer__top">
+    <div class="footer__top--logo">
+      <div class="footer__top--logo-logoImg">
+        <div
+          data-sly-resource="${'customimage1' @ resourceType='wknd/components/customimage' , selectors='logo'}"></div>
+      </div>
+    </div>
+    <div class="footer__top--Right">
+      <div class="footer__top--Right-socialIcons">
+        <div data-sly-resource="${'icon1' @ resourceType='wknd/components/footericon'}"></div>
+        <div data-sly-resource="${'icon2' @ resourceType='wknd/components/footericon'}"></div>
+        <div data-sly-resource="${'icon3' @ resourceType='wknd/components/footericon'}"></div>
+        <div data-sly-resource="${'icon4' @ resourceType='wknd/components/footericon'}"></div>
+        <div data-sly-resource="${'icon5' @ resourceType='wknd/components/footericon'}"></div>
+      </div>
+      <div class="footer__top--Right-contactInfo">
+        <div class="footer__top--Right-contactInfo__location">
+          <p>Location icon</p>
+          <p>${properties.branchaddress}</p>
+        </div>
+        <div class="footer__top--Right-contactInfo__email">
+          <div
+            data-sly-resource="${'icon6' @ resourceType='wknd/components/icon', selectors='emailicon'}"
+          ></div>
+          <p>${properties.email}</p>
+        </div>
+      </div>
+    </div>
+  </header>
  
-<div>
-<sly>address : ${properties.branchaddress}</sly>
-<sly data-sly-resource="${'connectwithus1' @ resourceType='wknd/components/connectwithus'}"></sly>
-</div>
-
-<div>
-<div data-sly-resource="${'footerlist1' @ resourceType='wknd/components/footerlist', selectors='footertop'}"></div>
-<div data-sly-resource="${'footerlist2' @ resourceType='wknd/components/footerlist', selectors='footeraccordian'}"></div>
-</div>
-
- <div data-sly-resource="${'customimage2' @ resourceType='wknd/components/customimage' , selectors='qr'}"></div>
-  <div data-sly-resource="${'customimage3' @ resourceType='wknd/components/customimage' , selectors='registerimage'}"></div>
-
-<sly>address : ${properties.registeredaddress}</sly>
-
-
-
-
+    <div
+      data-sly-resource="${'footerlist1' @ resourceType='wknd/components/footerlist', selectors='footertop'}"
+    ></div>
+  
+  <div class="footerBottom">
+    <div class="footerBottom__menu">
+      <div
+        data-sly-resource="${'footerlist2' @ resourceType='wknd/components/footerlist', selectors='footeraccordian'}"
+      ></div>
+      <div
+        data-sly-resource="${'footerlist3' @ resourceType='wknd/components/footerlist', selectors='footeraccordian'}"
+      ></div>
+      <div
+        data-sly-resource="${'footerlist4' @ resourceType='wknd/components/footerlist', selectors='footeraccordian'}"
+      ></div>
+      <div
+        data-sly-resource="${'footerlist5' @ resourceType='wknd/components/footerlist', selectors='footeraccordian'}"
+      ></div>
+      <div class="footerBottom__menu--column lastCol">
+        <div class="footerBottom__menu--column-last">
+          <input class="footerBottom__menu--column-last__input" />
+          <button class="footerBottom__menu--column-last__button">
+            Submit
+          </button>
+        </div>
+        <p class="follow">Follow Us</p>
+        <div class="footerBottom__menu--column-icons">
+          <div
+            data-sly-resource="${'icon7' @ resourceType='wknd/components/icon', selectors='mediaicon'}"
+          ></div>
+        </div>
+        <div class="footerBottom__menu--column__footerSplit">
+          <div class="footerBottom__menu--column__footerSplit-columnLeft">
+            <div
+              class="footerBottom__menu--column__footerSplit-columnLeft-imageSection"
+            >
+              <div
+                data-sly-resource="${'customimage2' @ resourceType='wknd/components/customimage' , selectors='registerimage'}"
+              ></div>
+            </div>
+            <div
+              class="footerBottom__menu--column__footerSplit-columnLeft-description"
+            >
+              <p>We are a leading Indian bank with a</p>
+              <p>hbb hbdhcbe bbcksb bjcbds</p>
+            </div>
+          </div>
+          <div class="footerBottom__menu--column__footerSplit-columnRight">
+            <div
+              class="footerBottom__menu--column__footerSplit-columnRight-imageSection"
+            >
+              <div
+                data-sly-resource="${'customimage3' @ resourceType='wknd/components/customimage' , selectors='qr'}"
+              ></div>
+            </div>
+            <div
+              class="footerBottom__menu--column__footerSplit-columnRight-description"
+            >
+              <p>qr code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footerBottom__description">${properties.registeredaddress}</div>
+    <hr />
+    <div class="footerBottom__final">
+      <div class="footerBottom__final--left">
+        <p>Terms and Condition</p>
+        <p>Privacy Policy</p>
+      </div>
+      <div class="footerBottom__final--right">
+        <p>Copyright text</p>
+      </div>
+    </div>
+  </div>
+</footer>

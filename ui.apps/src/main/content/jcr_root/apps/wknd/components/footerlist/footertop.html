@@ -1,17 +1,23 @@
-footer top
 <sly data-sly-list.item="${resource.listChildren}">
+    <nav class="footer___Menu">
     <sly data-sly-test="${item.name == 'menu'}">
-        <sly data-sly-list.menu="${item.listChildren}">
-            <p>${menu.menutitle}</p>
-
-         
+      <sly data-sly-list.menu="${item.listChildren}">
+        <div class="footer___Menu__column">
+            <h3 class="footer___Menu__column--highlight">${menu.menutitle}</h3>
+            <!-- Loop over item.listChildren for menu subitems -->
             <sly data-sly-list.subitem="${menu.listChildren}">
                 <sly data-sly-test="${subitem.name == 'items'}">
+                    
+                    <!-- Loop over subitem.listChildren to display menu links -->
                     <sly data-sly-list.item="${subitem.listChildren}">
-                        <p>${item.menuitem}</p>
+                        <a href="${item.linkto}" class="footer___Menu__column--highlight-links">
+                            ${item.menuitem}
+                        </a>
                     </sly>
+                    
                 </sly>
             </sly>
-        </sly>
+        </div>
     </sly>
+    </nav>
 </sly>

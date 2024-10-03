@@ -63,6 +63,14 @@
                                                                         fieldLabel="Menu Item"
                                                                         name="./menuitem"
                                                                         required="false"/>
+                                                                    <linkto
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        emptyText="Enter link here..."
+                                                                        fieldDescription="Enter link"
+                                                                        fieldLabel="Link to"
+                                                                        name="./linkto"
+                                                                        required="false"/>
                                                                 </items>
                                                             </field>
                                                         </footeritems>

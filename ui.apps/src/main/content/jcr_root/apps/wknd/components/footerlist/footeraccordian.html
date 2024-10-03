@@ -1,17 +1,22 @@
 footer accordian
 <sly data-sly-list.item="${resource.listChildren}">
-    <sly data-sly-test="${item.name == 'menu'}">
-        <sly data-sly-list.menu="${item.listChildren}">
-            <p>${menu.menutitle}</p>
-
-         
-            <sly data-sly-list.subitem="${menu.listChildren}">
-                <sly data-sly-test="${subitem.name == 'items'}">
-                    <sly data-sly-list.item="${subitem.listChildren}">
-                        <p>${item.menuitem}</p>
-                    </sly>
-                </sly>
-            </sly>
+  <sly data-sly-test="${item.name == 'menu'}">
+    <div class="footerBottom__menu--column">
+    <sly data-sly-list.menu="${item.listChildren}">
+     
+      <h4 class="footerBottom__menu--column--strong">
+      ${menu.menutitle}
+      <button class="accordion-button">+</button>
+       </h4>
+      <sly data-sly-list.subitem="${menu.listChildren}">
+        <sly data-sly-test="${subitem.name == 'items'}">
+            <div class="accordion-content">
+             <sly data-sly-list.item="${subitem.listChildren}">
+             <a href=${item.linkto} class="footerBottom__menu--column--strong-hyperlink">${item.menuitem}</a>
+          </sly>
         </sly>
+      </sly>
     </sly>
+  </sly>
 </sly>
+

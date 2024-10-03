@@ -314,6 +314,7 @@
           font-size: 24px;
           color: $color4;
           margin-right: 10px;
+          background-color: $color4;
 
           @media (max-width: 768px) {
             font-size: 20px;
@@ -360,6 +361,7 @@
     margin: 10px;
     background-color: #4b2e1e;
     padding: 10px;
+    padding-right: 2rem;
     border-radius: 10px;
     color: $color1;
 

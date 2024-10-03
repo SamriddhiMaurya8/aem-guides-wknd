@@ -21,3 +21,16 @@ function goToSlide(n) {
 
 
 setInterval(() => changeSlide(1), 5000);
+
+
+
+
+
+
+
+
+
+
+
+
+
