@@ -4,7 +4,7 @@ document.querySelectorAll('.footerBottom__menu--column--strong').forEach(header 
 
     header.addEventListener('click', () => {
         accContent.classList.toggle('open');
-        accContent.classList.toggle('open');
+        // accContent.classList.toggle('open');
     });
 });
 

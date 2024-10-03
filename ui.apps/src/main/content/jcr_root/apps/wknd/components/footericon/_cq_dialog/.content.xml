@@ -50,6 +50,14 @@
                                                 fieldLabel="Alternative Text"
                                                 name="./alt"
                                                 required="false"/>
+                                            <alt
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Enter a link here..."
+                                                fieldDescription="Optionally enter a link for your image"
+                                                fieldLabel="Link to"
+                                                name="./linkto"
+                                                required="false"/>
                                         </items>
                                     </column>
                                 </items>

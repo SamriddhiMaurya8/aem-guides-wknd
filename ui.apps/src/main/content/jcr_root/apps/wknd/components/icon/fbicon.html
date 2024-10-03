@@ -1,2 +1,8 @@
 <!--/* fbicon */-->
+
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-test.image="${properties.fileReference}">
 <img src=${properties.fileRefernce} class="fab fa-facebook" />
+</sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !image }"></sly>

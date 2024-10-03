@@ -1,4 +1,4 @@
-footer accordian
+<!--/* footer accordian */-->
 <sly data-sly-list.item="${resource.listChildren}">
   <sly data-sly-test="${item.name == 'menu'}">
     <div class="footerBottom__menu--column">
@@ -8,15 +8,19 @@ footer accordian
       ${menu.menutitle}
       <button class="accordion-button">+</button>
        </h4>
+
       <sly data-sly-list.subitem="${menu.listChildren}">
         <sly data-sly-test="${subitem.name == 'items'}">
             <div class="accordion-content">
              <sly data-sly-list.item="${subitem.listChildren}">
              <a href=${item.linkto} class="footerBottom__menu--column--strong-hyperlink">${item.menuitem}</a>
-          </sly>
+             </sly>
+            </div>
         </sly>
       </sly>
+
     </sly>
   </sly>
+</div>
 </sly>
 

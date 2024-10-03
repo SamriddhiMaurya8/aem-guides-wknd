@@ -1,0 +1,139 @@
+@import 'variables' ; 
+@import 'mixin' ; 
+
+.rippleEffect{
+    text-align: center;
+    padding: 2rem;
+
+    &__rippleHeading{
+        &--subTitle{
+            color: $color4;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        &--Title{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        &--description{
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+    }
+    &__carouselControls{
+        display: flex;
+        justify-content: end;
+        margin-top: 2rem;
+        &__controlLeft , &__controlRight{
+            background-color: $color3;
+            border: none;
+            color: $color1;
+            padding: 10px 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin: 0 10px;
+            border-radius: 50%;
+            &:hover{
+                background-color: $color5;
+            }
+        }
+    }
+    &__rippleCarousel{
+        display: flex;
+        justify-content: flex-start; 
+        overflow: hidden;
+        width: calc(100% - 40px);
+        transition: transform 0.9s ease;
+        padding: 1rem;
+        &--rippleItem{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-align: left;
+            max-width: 300px;
+            position: relative;
+            min-width: 25%; 
+            transition: transform 0.5s ease, opacity 0.3s ease;
+
+            &-circle{
+                width: 100px;
+                height: 100px;
+                background: linear-gradient(145deg, $color4, $color5);
+                border-radius: 50%;
+                color: $color1;
+                font-size: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+
+                @media (max-width:768px){
+                    width: 80px;
+                    height: 80px;
+                    font-size: 1.5rem;
+                }
+
+               
+                @media (max-width: 576px){
+                    width: 70px;
+                    height: 70px;
+                    font-size: 1.2rem;
+                }
+            }
+            &-rippleText{
+                max-width: 200px;
+                &--boldText{
+                    font-size: 2rem;
+                    margin-bottom: 0.5rem;
+
+                    @media (max-width: 1200px) {
+                        font-size: 1.8rem;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 1.6rem;
+                    }
+                    @media (max-width: 576px) {
+                        font-size: 1.4rem;
+                    }
+                }
+                &--text{
+                    font-size: 0.9rem;
+                    line-height: 1.5;
+                    @media (max-width: 1200px) {
+                        font-size: 0.8rem;
+                    }
+                    @media (max-width: 576px) {
+                        font-size: 0.75rem;
+                    }
+
+                }
+            }
+
+            @media (max-width: 1200px) {
+                min-width: 33%;
+            }
+            @media (max-width: 768px) {
+                min-width: 50%; 
+                text-align: center;
+            }
+            @media (max-width: 576px) {
+                min-width: 100%; 
+                text-align: center;
+            }
+            &:nth-child(even){
+                transform: translateY(50px);
+            }
+            &:nth-child(odd){
+                transform: translateY(-50px);
+            }
+        }
+       
+    }
+}
+
+
+.hidden {
+    display: none;
+}

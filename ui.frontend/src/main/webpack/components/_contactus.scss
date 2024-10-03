@@ -308,13 +308,15 @@
       &-content {
         display: flex;
         align-items: center;
+        // @include flex-centre ; 
         margin-bottom: 10px;
-
+        
         .icon {
           font-size: 24px;
           color: $color4;
           margin-right: 10px;
           background-color: $color4;
+          border-radius: 50%;
 
           @media (max-width: 768px) {
             font-size: 20px;
@@ -503,12 +505,16 @@
         padding: 10px;
         gap: 10px;
 
-        &__span {
-          font-size: 2rem;
+        & .checkboxContainer__span {
+          font-size: 1rem;
 
-          @media screen and (min-width: 768px) {
-            font-size: 0.6rem;
+          @media screen and (max-width: 1500px) {
+            font-size: 0.8rem;
           }
+          @media screen and (max-width: 1220px) {
+            font-size: 0.7rem;
+          }
+
         }
       }
     }
