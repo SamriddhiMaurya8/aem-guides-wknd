@@ -1,8 +1,16 @@
 
 <!--/* connect */-->
+
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-test.email="${properties.email}">
 <div class="contactSection__leftsection--contactInfo-content">
      <sly data-sly-resource="${'icon' @ resourceType='wknd/components/icon', selectors='emailicon'}"></sly>
      <span class="mails">Business: <span class="email"> ${properties.email}</span></span>
  </div>
+ 
+ </sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !email }"></sly>
+
 
 

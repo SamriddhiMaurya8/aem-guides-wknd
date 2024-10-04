@@ -1,1 +1,35 @@
 ripple compoenent
+
+<div class="rippleEffect">
+        <div class="rippleEffect__rippleHeading">
+            <p class="rippleEffect__subTitle"><em>${properties.preheading}</em></p>
+            <h1 class="rippleEffect__Title">${properties.heading}</h1>
+            <p class="rippleEffect__description">
+                ${properties.content}
+            </p>
+        </div>
+ 
+        <div class="rippleEffect__carouselControls">
+            <button class="rippleEffect__carouselControls__controlLeft control-left">&larr;</button>
+            <button class="rippleEffect__carouselControls__controlRight control-right">&rarr;</button>
+        </div>
+ 
+        <div class="rippleEffect__rippleCarousel">
+         <sly data-sly-list.item="${resource.listChildren}">
+            <sly data-sly-test="${item.name == 'text'}">
+              <sly data-sly-list.text="${item.listChildren}">  
+          
+            <div class="rippleEffect__rippleCarousel--rippleItem">
+                <div class="rippleEffect__rippleCarousel--rippleItem-circle">${textList.count}%</div>
+                <div class="rippleEffect__rippleCarousel--rippleItem-rippleText">
+                    <h2 class="rippleEffect__rippleCarousel--rippleItem-rippleText--boldText">${text.subtext}</h2>
+                    <p class="rippleEffect__rippleCarousel--rippleItem-rippleText--text">
+                        ${text.description}
+                    </p>
+                </div>
+            </div>
+              </sly>
+            </sly>
+         </sly>
+       </div>
+    </div>

@@ -35,14 +35,6 @@
                                                 fieldLabel="Branch Address"
                                                 name="./branchaddress"
                                                 required="{Boolean}true"/>
-                                            <registeredoffice
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                                                emptyText="Enter registered address..."
-                                                fieldDescription="Enter the registered address."
-                                                fieldLabel="Registered Address"
-                                                name="./registeredaddress"
-                                                required="{Boolean}true"/>
                                         </items>
                                     </column>
                                 </items>

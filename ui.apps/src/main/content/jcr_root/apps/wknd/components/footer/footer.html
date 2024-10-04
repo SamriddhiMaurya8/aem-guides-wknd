@@ -19,6 +19,9 @@
       <div class="footer__top--Right-contactInfo">
         <div class="footer__top--Right-contactInfo__location">
           <!--/* <p>Location icon</p> */-->
+          <div
+            data-sly-resource="${'icon12' @ resourceType='wknd/components/icon', selectors='locationicon'}"
+          ></div>
           <p>${properties.branchaddress}</p>
         </div>
         <div class="footer__top--Right-contactInfo__email">
@@ -36,6 +39,11 @@
     ></div>
   
   <div class="footerBottom">
+  <div class="footerBottom__logo">
+  <div
+  data-sly-resource="${'logo' @ resourceType='wknd/components/icon', selectors='icon'}"
+></div>
+</div>
     <div class="footerBottom__menu">
       <div
         data-sly-resource="${'footerlist2' @ resourceType='wknd/components/footerlist', selectors='footeraccordian'}"
@@ -59,8 +67,18 @@
         <p class="follow">Follow Us</p>
         <div class="footerBottom__menu--column-icons">
           <div
-            data-sly-resource="${'icon7' @ resourceType='wknd/components/icon', selectors='mediaicon'}"
+            data-sly-resource="${'icon7' @ resourceType='wknd/components/footericon', selectors='mediaicon'}"
           ></div>
+          
+          <div
+            data-sly-resource="${'icon8' @ resourceType='wknd/components/footericon', selectors='mediaicon'}"
+          ></div><div
+          data-sly-resource="${'icon9' @ resourceType='wknd/components/footericon', selectors='mediaicon'}"
+        ></div><div
+        data-sly-resource="${'icon10' @ resourceType='wknd/components/footericon', selectors='mediaicon'}"
+      ></div><div
+      data-sly-resource="${'icon11' @ resourceType='wknd/components/footericon', selectors='mediaicon'}"
+    ></div>
         </div>
         <div class="footerBottom__menu--column__footerSplit">
           <div class="footerBottom__menu--column__footerSplit-columnLeft">
@@ -95,7 +113,10 @@
         </div>
       </div>
     </div>
-    <div class="footerBottom__description">${properties.registeredaddress}</div>
+    <div class="footerBottom__description"> <div
+    data-sly-resource="${'address' @ resourceType='wknd/components/address'}"
+  ></div>
+  </div>
     <hr />
     <div class="footerBottom__final">
       <div class="footerBottom__final--left">

@@ -71,7 +71,7 @@
                                                             sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
                                                             allowUpload="{Boolean}false"
                                                             autoStart="{Boolean}false"
-                                                            class="cq-droptarget"
+
                                                             fieldLabel="Image Asset"
                                                             fileNameParameter="./fileName"
                                                             fileReferenceParameter="./fileReference"

@@ -4,18 +4,20 @@
 .rippleEffect{
     text-align: center;
     padding: 2rem;
-
+background-color: $color12;
     &__rippleHeading{
-        &--subTitle{
+        & .rippleEffect__subTitle{
             color: $color4;
             font-weight: bold;
             margin-bottom: 0.5rem;
         }
-        &--Title{
+        & .rippleEffect__Title{
+            color: $color1;
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
-        &--description{
+        & .rippleEffect__description{
+            color: $color1;
             max-width: 700px;
             margin: 0 auto 2rem auto;
             font-size: 1rem;
@@ -45,6 +47,7 @@
         justify-content: flex-start; 
         overflow: hidden;
         width: calc(100% - 40px);
+        height: 15rem;
         transition: transform 0.9s ease;
         padding: 1rem;
         &--rippleItem{
@@ -83,6 +86,7 @@
                 }
             }
             &-rippleText{
+                color: $color1;
                 max-width: 200px;
                 &--boldText{
                     font-size: 2rem;

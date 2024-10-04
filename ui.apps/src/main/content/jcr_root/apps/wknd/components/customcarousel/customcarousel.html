@@ -3,20 +3,20 @@ custom carousel
 <sly data-sly-list="${resource.listChildren}">
 <sly data-sly-test="${item.name == 'assets'}">   
 <div class="mainCarousel">
-<sly data-sly-list.imageSection="${item.listChildren}">
-<div class="mainCarousel__slide ">
-    <img src=${imageSection.fileReference} alt=${imageSection.alt} class="mainCarousel__slide--image">
+    <sly data-sly-list.imageSection="${item.listChildren}">
+     <div class="mainCarousel__slide ">
+    <img src= ${imageSection.fileReference} alt=${imageSection.alt} class="mainCarousel__slide--image">
     <div class="mainCarousel__slide--content">
         <h1 class="mainCarousel__slide--content-topHeading"><em>${imageSection.imageSubtitle}</em></h1>
         <h2 class="mainCarousel__slide--content-mainHeading">${imageSection.imageTitle}</h2>
         <p class="mainCarousel__slide--content-paragraph">${imageSection.imageDescription}</p>
         <a href=${imageSection.buttonlinkURL} class="button">${imageSection.buttonText}</a>
     </div>
-</div>
-</sly>
+    </div>
+  </sly>
 
 <div class="mainCarousel__navigation">
-    <button class="mainCarousel__navigation--nav-button" onclick="changeSlide(-1)">←</button>
+    <button class="mainCarousel__navigation--nav-button buttonLeft" onclick="changeSlide(-1)">←</button>
     <div class="mainCarousel__navigation--dots">
         <span class="mainCarousel__navigation--dots-dot active" onclick="goToSlide(0)">1</span>
         <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(1)">2</span>
@@ -26,10 +26,8 @@ custom carousel
         <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(5)">6</span>
         <span class="mainCarousel__navigation--dots-dot" onclick="goToSlide(6)">7</span>
     </div>
-    <button class="mainCarousel__navigation--nav-button" onclick="changeSlide(1)">→</button>
+    <button class="mainCarousel__navigation--nav-button buttonRight" onclick="changeSlide(1)">→</button>
 </div>
 </div>
 </sly>
 </sly>
-
-</div>
