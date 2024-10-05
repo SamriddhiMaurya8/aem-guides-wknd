@@ -28,11 +28,12 @@ background-color: $color12;
         display: flex;
         justify-content: end;
         margin-top: 2rem;
+        
         &__controlLeft , &__controlRight{
             background-color: $color3;
             border: none;
             color: $color1;
-            padding: 10px 10px;
+            // padding: 10px 10px;
             font-size: 1.5rem;
             cursor: pointer;
             margin: 0 10px;
