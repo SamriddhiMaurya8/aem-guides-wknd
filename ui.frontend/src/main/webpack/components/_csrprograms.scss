@@ -1,4 +1,3 @@
-
 @import "variables";
 @import "mixin";
 
@@ -114,23 +113,22 @@
   }
 
   &__imageGallery {
-    display: flex;
-    justify-content: space-between;
+    @include flex-content(flex , space-between) ; 
     margin-bottom: 20px;
     overflow: hidden;
     width: 100%;
-    .gallery-items-wrapper {
+   & .gallery-items-wrapper {
       display: flex;
       transition: transform 0.5s ease-in-out;
       gap: 2rem;
 
-      .gallery-item {
+     & .gallery-item {
         width: 25%;
         flex: 0 0 25%;
         cursor: pointer;
         &__image {
           width: 100%;
-          height: auto;
+          height: 14rem;
           object-fit: cover;
           @media (max-width: 768px) {
             width: 100%;
@@ -138,7 +136,7 @@
             margin-bottom: 15px;
           }
         }
-        &-caption {
+        &__caption {
           font-size: 0.9em;
           margin-top: 5px;
           text-align: center;
@@ -148,6 +146,10 @@
             width: 100%;
             margin-right: 0;
           }
+        }
+
+        &__desc{
+          display: none;
         }
       }
     }
@@ -182,8 +184,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      display: flex;
-      justify-content: space-evenly;
+      @include flex-content(flex , space-evenly) ; 
       margin-top: 20px;
     }
 
@@ -206,8 +207,7 @@
     margin-top: 20px;
   }
   .navigation {
-    display: flex;
-    justify-content: space-evenly;
+    @include flex-content(flex , space-evenly) ; 
     margin-top: 20px;
   }
   .nav-button {
