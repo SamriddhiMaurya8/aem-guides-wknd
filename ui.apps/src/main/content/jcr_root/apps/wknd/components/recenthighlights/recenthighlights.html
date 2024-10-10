@@ -1,0 +1,38 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-test.text="${properties.heading}">
+<div class="galleryContainer">
+        <div class="galleryContainer__item">
+            <div class="galleryContainer__item--innerr">
+                <div class="galleryContainer__item--innerr-frontt">
+                    <div class="galleryContainer__item--innerr-frontt__header">
+                        <h1 class='galleryContainer__item--innerr-frontt__header__heading'>${properties.heading}</h1>
+                        <h2 class='galleryContainer__item--innerr-frontt__header__subheading'>${properties.preheading}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <div class="galleryContainer__item"
+          data-sly-resource="${'highlight1' @ resourceType='wknd/components/recenthighlightsimage' , selectors='highlight1'}">
+      </div>
+       <div class="galleryContainer__item"
+          data-sly-resource="${'highlight2' @ resourceType='wknd/components/recenthighlightsimage' , selectors='highlight2'}">
+      </div>
+      <div class="galleryContainer__item"
+          data-sly-resource="${'highlight3' @ resourceType='wknd/components/recenthighlightsimage' , selectors='highlight3'}">
+      </div>
+      <div class="galleryContainer__item"
+          data-sly-resource="${'highlight4' @ resourceType='wknd/components/recenthighlightsimage' , selectors='highlight4'}">
+      </div>
+      <div class="galleryContainer__item"
+          data-sly-resource="${'highlight5' @ resourceType='wknd/components/recenthighlightsimage' , selectors='highlight5'}">
+      </div>
+      <div class="galleryContainer__item"
+          data-sly-resource="${'highlight6' @ resourceType='wknd/components/recenthighlightsimage' , selectors='highlight6'}">
+      </div>
+      <!--/* <div class="galleryContainer__item"
+          data-sly-resource="${'highlight7' @ resourceType='wknd/components/recenthighlightsimage' , selectors='highlight7'}">
+      </div> */-->
+</div>
+</sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !text}"></sly>

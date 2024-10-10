@@ -1,0 +1,39 @@
+<!--/* <sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-test.image="${properties.fileReference}">
+<div class="item">
+            <div class="item-inner">
+                <div class="item-front">
+                    <img src=${properties.fileReference} alt=${properties.alt} />
+                </div>
+                <div class="item-back">
+                    <h3>${properties.title}</h3>
+                    <p>
+                       ${properties.description}
+                    </p>
+                </div>
+            </div>
+        </div>
+        </sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !image}"></sly> */-->
+
+
+
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-test.image="${properties.fileReference}">
+ <!--/* <div class="galleryContainer__item"> */-->
+            <div class="galleryContainer__item--inner">
+                <div class="galleryContainer__item--inner-front">
+                    <img src=${properties.fileReference} alt=${properties.alt} class="galleryContainer__item--inner-front__img"/>
+                </div>
+                <div class="galleryContainer__item--inner-back">
+                    <h3 class='galleryContainer__item--inner-back__heading'>${properties.title}</h3>
+                    <p class="galleryContainer__item--inner-back__desc">
+                       ${properties.description}
+                    </p>
+                </div>
+            </div>
+<!--/* </div> */-->
+</sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !image}"></sly>
+     

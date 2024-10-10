@@ -1,6 +1,6 @@
 
 
-// profile-carousel.js
+
 (function() {
     function initProfileCarousel() {
       const profileElements = document.querySelectorAll('.carouselContainer__carousel--profile');

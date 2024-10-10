@@ -1,11 +1,11 @@
 <footer class="footer">
   <header class="footer__top">
     <div class="footer__top--logo">
-      <div class="footer__top--logo-logoImg">
-        <div
+      <!--/* <div class="footer__top--logo-logoImg"> */-->
+        <div class="footer__top--logo-logoImg"
           data-sly-resource="${'customimage1' @ resourceType='wknd/components/customimage' , selectors='logo'}"></div>
       </div>
-    </div>
+    <!--/* </div> */-->
     <div class="footer__top--Right">
       <div class="footer__top--Right-socialIcons">
         <div data-sly-resource="${'icon1' @ resourceType='wknd/components/footericon'}"></div>
@@ -55,6 +55,10 @@
       <div
         data-sly-resource="${'footerlist5' @ resourceType='wknd/components/footerlist', selectors='footeraccordian'}"
       ></div>
+      <div
+      data-sly-resource="${'footerlist6' @ resourceType='wknd/components/footerlist', selectors='footeraccordian'}"
+    ></div>
+      
       <div class="footerBottom__menu--column lastCol">
         <div class="footerBottom__menu--column-last">
           <input class="footerBottom__menu--column-last__input" />

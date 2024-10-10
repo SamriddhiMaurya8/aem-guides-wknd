@@ -1,8 +1,11 @@
 <sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
 <sly data-sly-test.heading="${properties.heading}">
 <div class="contentSection">
-        <h1 class="contentSection__subHeader">${properties.preheading}</h1>
-        <h2 class="contentSection__headingMain">${properties.heading}</h2>
+    <div class="contentSection__headings">
+        <h3 class="contentSection__headings__subHeader">${properties.preheading}</h3>
+        <h1 class="contentSection__headings__headingMain">${properties.heading}</h1>
+    </div>
+   
         <p class="contentSection__middleText">
            ${properties.content}
         </p>
