@@ -177,13 +177,14 @@
     &--nav-button {
       background-color: $color4;
       @include heading-style( 1rem , $color1 , 10px) ; 
-      // color:$color1;
+     
       border: none;
-      padding: 10px 10px;
+      // padding: 10px 10px;
       margin: 0 10px;
       cursor: pointer;
       border-radius: 50%;
-      // font-size: 1rem;
+      height: 2.5rem;
+      width: 2.5rem;
       transition: background-color 0.3s;
 
       &:hover {

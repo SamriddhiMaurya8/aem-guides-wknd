@@ -2,6 +2,7 @@
 @import 'mixin' ; 
 
 .footer {
+  font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   &__top {
     background-color: $color11;
@@ -23,10 +24,8 @@
       }
     }
 
-    &--Right {
-      // display: flex;
-      // flex-direction: column;
-      // align-items: center; 
+    &--right {
+    
       @include flex-direction(flex , column , center) ; 
       text-align: center;
 
@@ -42,6 +41,9 @@
           flex-direction: row; 
           gap: 1rem;
         }
+        @media (max-width: 768px) {
+          left: 0;
+        }
       }
 
       &-socialIcons {
@@ -52,6 +54,9 @@
         &-link {
           margin-left: 10px;
           color: $color2;
+        }
+        @media (max-width: 768px) {
+          gap: 10vw;
         }
       }
     }
@@ -83,12 +88,7 @@
         }
       }
     }
-
-
-
-
-
-  }
+}
 
   .footerBottom {
     background-color: $color2;
@@ -149,6 +149,10 @@
           @include flex-content(flex , center) ; 
           gap: 0.5rem;
           color: $color1;
+
+          @media screen and (max-width:689px) {
+            gap: 1.5rem;
+          }
         }
         &__footerSplit{
           // display: flex;
@@ -159,6 +163,7 @@
 
           @media (max-width:600px){
             flex-wrap: nowrap;
+            padding: 2rem;
           }
 
         }
@@ -234,6 +239,7 @@ hr {
 
       &__final {
         flex-direction: column; 
+        padding: 3rem 2vh;
       }
     }
   }
@@ -280,5 +286,16 @@ hr {
 .footer__top--logo-logoImg{
   img{
     width: 10rem;
+  }
+}
+
+
+
+
+.follow{
+  @media screen and (max-width:678px) {
+    position: relative;
+    left: 40%;
+    font-size: 1.3rem;
   }
 }

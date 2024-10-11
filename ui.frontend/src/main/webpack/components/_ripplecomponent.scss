@@ -8,18 +8,26 @@
   &__rippleHeading {
     & .rippleEffect__subTitle {
       color: $color4;
-      font-weight: bold;
       margin-bottom: 0.5rem;
+      font-weight: 700;
+      font-size: 2.5rem;
     }
-    & .rippleEffect__Title {
+    & .rippleEffect__title {
       // color: $color1;
       // font-size: 2.5rem;
       margin-bottom: 1rem;
-      @include heading-style(2.5rem, $color1, 0);
+      @include heading-style(4rem, $color1, -35px);
+
+      @media screen and (max-width:768px) {
+        font-size: 3rem;
+        margin-top: -23px;
+      }
     }
     & .rippleEffect__description {
       color: $color1;
       max-width: 700px;
+      font-weight: 400;
+      font-family: Arial, Helvetica, sans-serif;
       margin: 0 auto 2rem auto;
       font-size: 1rem;
       line-height: 1.6;
@@ -74,13 +82,10 @@
       &-circle {
         width: 100px;
         height: 100px;
-        background: linear-gradient(145deg, $color4, $color5);
+        background: linear-gradient(135deg, #ffa500, #ff4500);
         border-radius: 50%;
         color: $color1;
         font-size: 2rem;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
         @include flex-centre;
         flex-shrink: 0;
 
@@ -99,6 +104,7 @@
       &-rippleText {
         color: $color1;
         max-width: 200px;
+        font-family: Arial, Helvetica, sans-serif;
         &--boldText {
           font-size: 2rem;
           margin-bottom: 0.5rem;
